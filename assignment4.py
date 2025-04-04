@@ -2,7 +2,6 @@
 def read_and_modify_file():
     # Ask the user for the filename
     filename = input("Enter the name of the file to read: ")
-    
     try:
         # Open the file for reading
         with open(filename, 'r') as file:
@@ -26,6 +25,6 @@ def read_and_modify_file():
     
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
-
-# Call the function
-read_and_modify_file()
+# Run the program
+if __name__ == "__main__":
+    read_and_modify_file()
